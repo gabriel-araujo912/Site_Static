@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Teste de Imagens</title>
+    <link rel="stylesheet" type="text/css" href="/Gabriel55Ar/TheSegredo/Segredo.css">
+  </head>
+  <body>
+    <section>
+      <ul>
+        <li class="list active" data-filter="all">Todos</li>
+        <li class="list" data-filter="mobile">Celular</li>
+        <li class="list" data-filter="camera">Cameras</li>
+        <li class="list" data-filter="watch">Relógios</li>
+        <li class="list" data-filter="shoe">Sapatos</li>
+        <li class="list" data-filter="shoe mobile">Sapatos e Celulares</li>
+        <li class="list" data-filter="headphone">Fones de ouvido</li>
+      </ul>
+      <div class="product">
+        <div class="itemBox mobile"><img src="TheSegredo/images/mobile1.jpg"></div>
+        <div class="itemBox camera"><img src="TheSegredo/images/camera1.jpg"></div>
+        <div class="itemBox watch"><img src="TheSegredo/images/watch1.jpg"></div>
+        <div class="itemBox shoe"><img src="TheSegredo/images/shoe1.jpg"></div>
+        <div class="itemBox headphone"><img src="TheSegredo/images/headphone1.jpg"></div>
+
+        <div class="itemBox mobile"><img src="TheSegredo/images/mobile2.jpg"></div>
+        <div class="itemBox camera"><img src="TheSegredo/images/camera2.jpg"></div>
+        <div class="itemBox watch"><img src="TheSegredo/images/watch2.jpg"></div>
+        <div class="itemBox shoe"><img src="TheSegredo/images/shoe2.jpg"></div>
+        <div class="itemBox headphone"><img src="TheSegredo/images/headphone2.jpg"></div>
+
+        <div class="itemBox mobile"><img src="TheSegredo/images/mobile3.jpg"></div>
+        <div class="itemBox camera"><img src="TheSegredo/images/camera3.jpg"></div>
+        <div class="itemBox watch"><img src="TheSegredo/images/watch3.jpg"></div>
+        <div class="itemBox shoe"><img src="TheSegredo/images/shoe3.jpg"></div>
+        <div class="itemBox headphone"><img src="TheSegredo/images/headphone3.jpg"></div>
+
+        <div class="itemBox mobile"><img src="TheSegredo/images/mobile4.jpg"></div>
+        <div class="itemBox watch"><img src="TheSegredo/images/watch4.jpg"></div>
+        <div class="itemBox shoe"><img src="TheSegredo/images/shoe4.jpg"></div>
+        <div class="itemBox headphone"><img src="TheSegredo/images/headphone4.jpg"></div>
+
+        <div class="itemBox mobile"><img src="TheSegredo/images/mobile5.jpg"></div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.list').click(function(){
+          const value = $(this).attr('data-filter');
+          if (value == 'all'){
+            $('.itemBox').show('1000');
+          }
+          else{
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+          }
+        })
+        $('.list').click(function(){
+          $(this).addClass('active').siblings().removeClass('active');
+        })
+      })
+    </script>
+
+  </body>
+</html>

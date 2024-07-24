@@ -1,0 +1,56 @@
+@media (max-width: 1080px) {
+
+.topo h2 {
+  font-size: 35px;
+  left: 10%;
+  top: 0;
+}
+
+.tipos {
+  top: 35px;
+}
+
+.tipos a {
+  font-size: 22px;
+}
+
+.trailer {
+  height: 800px;
+  top: -10%;
+}
+
+.filmes {
+  margin-bottom: 0px;
+}
+  
+.acao {
+  padding-top: 120px;
+}
+
+.acao:nth-child(1) {
+  padding-top: 10px;
+}
+
+.acao:nth-last-child(1) {
+  border-bottom: 100px solid #000;
+}
+
+.acao h3 {
+  font-size: 30px;
+  padding-left: 60px;
+}
+
+.rodape p:nth-child(1) {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  bottom: 110px;
+  left: 150px;
+  margin-right: 150px;
+}
+
+.rodape p:nth-child(2) {
+  bottom: 14px;
+}
+
+}

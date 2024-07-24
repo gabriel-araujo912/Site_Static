@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@700&family=Pacifico&family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(320deg, #1c1c1c, #49006b);
+  position: relative;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+@media (min-height: 980px) {
+
+iframe {
+  width: 90%;
+  height: 30%;
+  
+  
+}
+
+}

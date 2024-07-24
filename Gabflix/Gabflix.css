@@ -1,0 +1,216 @@
+body {
+  background: rgb(0, 0, 0);
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;     /* largura da barra */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(68, 68, 68);    /* cor da área não celecionada */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190);    /* cor da barra selecionavel */
+  border-radius: 20px;       /* arredondamento das bordas */
+  border: 2px rgb(68, 68, 68);  /* distanciamento */
+}
+
+.topo {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg,#000000,transparent);
+  display: flex;
+  z-index: 1000;
+}
+
+.topo h2 {
+  position: absolute;
+  font-size: 25px;
+  left: 150px;
+  top: 5px;
+  font-family: consolas;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tipos {
+  position: absolute;
+  left: 35%;
+  width: 65%;
+  height: 25px;
+  justify-content: space-evenly;
+  display: flex;
+  top: 25px;
+}
+
+.tipos a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: consolas;
+  font-size: 18px;
+  color: rgb(255, 0, 0);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.tipos a:hover {
+  color: rgb(214, 214, 214);
+  transition: 0.5s;
+}
+
+.trailer {
+  width: 100%;
+  height: 600px;
+  top: -7%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background: rgb(55, 54, 54);
+  left: 0;
+  z-index: 200;
+}
+
+video {
+  width: 90%;
+  height: 100%;
+}
+
+.Um {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  background: linear-gradient(0deg,#000000,transparent);
+  top: 400px;
+  z-index: 250;
+}
+
+.filmes {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 500px;
+  background: #000000;
+  margin-bottom: 100px;
+  z-index: 300;
+}
+
+.acao {
+  padding-top: 40px;
+  width: 100%;
+  height: 260px;
+  z-index: 1100;
+}
+
+.acao h3 {
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding-left: 50px;
+}
+
+.mov {
+  width: 94%;
+  height: 180px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.mov::-webkit-scrollbar {
+  height: 6px;     /* largura da barra */
+}
+
+.mov::-webkit-scrollbar-track {
+  background: rgb(68, 68, 68);    /* cor da área não celecionada */
+}
+
+.mov::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190);    /* cor da barra selecionavel */
+  border-radius: 20px;       /* arredondamento das bordas */
+  border: 2px rgb(68, 68, 68);  /* distanciamento */
+}
+
+.film {
+  width: 240px;   /* 274px */
+  height: 135px;  /* 154px */
+  margin-right: 30px;
+  background: rgb(240, 240, 240);
+  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 400;
+  border-radius: 5px;
+}
+
+.film img {
+  width: 240px;
+  height: 135px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.film:hover {
+  width: 274px;
+  height: 159px;
+  transition: 0.5s;
+}
+
+.film img:hover {
+  width: 274px;
+  height: 159px;
+  transition: 0.5s;
+}
+
+.rodape {
+  width: 100%;
+  height: 370px;
+  background: linear-gradient(112deg, rgb(209 209 209), #615a5a);
+  position: relative;
+  top: 500px;
+  box-shadow: inset 0px 4px 12px 0px #222222;
+}
+
+.rodape p:nth-child(1) {
+  font-family: consolas;
+  font-weight: 500;
+  font-size: 15px;
+  position: absolute;
+  bottom: 170px;
+  left: 250px;
+  margin-right: 250px;
+  color: #000;
+}
+
+.rodape p:nth-child(2) {
+  font-family: consolas;
+  font-weight: 600;
+  position: absolute;
+  bottom: 14px;
+  left: 30px;
+  color: #000;
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}

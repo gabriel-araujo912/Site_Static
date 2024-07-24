@@ -1,0 +1,11 @@
+<!-- O que eu preciso adicionar no site -->
+
+* No titulo do site colocar: ei você é forte (frase motivadora) com o aparecer de uma div a baixo, com delay de informações
+
+* Colocar uma div com frases motivadoras (ainda não pensei no design)
+
+* Colocar uma div com os vídeos legais do insta (ainda não pensei no design)
+
+* Colocar a minha história
+
+* No final colocar: meu nome e "Tudo sobre alguém".

@@ -1,0 +1,391 @@
+@media (max-width: 1080px) {
+
+body {
+  background: rgb(250, 250, 250);
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;     /* largura da barra */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(68, 68, 68);    /* cor da área não celecionada */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190);    /* cor da barra selecionavel */
+  border-radius: 20px;       /* arredondamento das bordas */
+  border: 2px rgb(68, 68, 68);  /* distanciamento */
+}
+
+.Cabeçalho{
+  height: 730px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background: linear-gradient(120deg,rgb(240, 240, 240), rgb(199, 199, 199));
+}
+
+.Cabeçalho img {
+  position: absolute;
+  top: 27%;
+  left: 20%;
+  height: 120px;
+  width: 170px;
+  transform: rotate(82deg);
+  z-index: 100;
+}
+
+.Bloco4 {
+  background-color: rgb(182, 182, 182);
+  height: 125px;
+  width: 40%;
+  position: absolute;
+  top: 100px;
+  margin-left: 30%;
+}
+
+.Bloco5 {
+  background-color: rgb(233, 233, 233);
+  height: 125px;
+  width: 40%;
+  position: absolute;
+  top: 70px;
+  margin-left: 28%;
+  border: 1px solid #fff;
+}
+
+.Bloco5 h1 {
+  font-family: 'Caveat', cursive;
+  margin-left: 8%;
+  font-size: 40px;
+}
+
+.Bloco6 {
+  background-color: rgb(190, 190, 190);
+  height: 350px;
+  width: 65%;
+  position: absolute;
+  top: 300px;
+  margin-left: 17%;
+  transform: rotate(8deg);
+}
+
+.Bloco7 {
+  background-color: rgb(233, 233, 233);
+  height: 350px;
+  width: 65%;
+  position: absolute;
+  top: 300px;
+  margin-left: 17%;
+  border: 1px solid #fff;
+  transform: rotate(-3deg);
+}
+
+.Bloco8 {
+  background-color: transparent;
+  height: 350px;
+  width: 65%;
+  position: absolute;
+  top: 300px;
+  margin-left: 17%;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.Bloco8 p {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  text-align: center;
+}
+
+.Inicio {
+  background: rgb(250, 250, 250);
+  height: 500px;
+  width: 100%;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.Inicio p {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.music {
+  height: 1057px;
+}
+
+.IntroMusicas {
+  background: rgb(250, 250, 250);
+  height: 500px;
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+
+.Bloco1 {
+  background-color: rgb(209, 209, 209);
+  height: 330px;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  margin-left: 20%;
+  transform: rotate(8deg);
+}
+
+.Bloco2 {
+  background-color: rgb(233, 233, 233);
+  height: 330px;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  margin-left: 20%;
+  transform: rotate(-3deg);
+}
+
+.Bloco3 {
+  background-color: transparent;
+  height: 330px;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  margin-left: 20%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Bloco3 p {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+}
+
+.Musicas {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  left: 0;
+  top: 60px;
+  background: #000000;
+  z-index: 300;
+}
+
+.TitMusica {
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.TitMusica h3 {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  text-shadow: 0px 0px 20px #fff;
+}
+
+.mov {
+  width: 94%;
+  height: 180px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.mov::-webkit-scrollbar {
+  height: 6px;     /* largura da barra */
+}
+
+.mov::-webkit-scrollbar-track {
+  background: rgb(68, 68, 68);    /* cor da área não celecionada */
+}
+
+.mov::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190);    /* cor da barra selecionavel */
+  border-radius: 20px;       /* arredondamento das bordas */
+  border: 2px rgb(68, 68, 68);  /* distanciamento */
+}
+
+.film {
+  width: 240px;   /* 274px */
+  height: 135px;  /* 154px */
+  margin-right: 30px;
+  background: rgb(240, 240, 240);
+  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 400;
+  border-radius: 5px;
+}
+
+.film img {
+  width: 240px;
+  height: 135px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.film:hover {
+  width: 274px;
+  height: 159px;
+  transition: 0.5s;
+}
+
+.film img:hover {
+  width: 274px;
+  height: 159px;
+  transition: 0.5s;
+}
+
+.YouTube {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  visibility: hidden;
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.imagens {
+  top: 60px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.Bloco9 {
+  top: 80px;
+  left: 27%;
+  background-color: rgb(209, 209, 209);
+  height: 260px;
+  width: 46%;
+  position: absolute;
+  transform: rotate(8deg);
+}
+
+.Bloco10 {
+  top: 80px;
+  left: 27%;
+  background-color: rgb(233, 233, 233);
+  height: 260px;
+  width: 46%;
+  position: absolute;
+  transform: rotate(-3deg);
+  border: 1px solid #fff;
+}
+
+.Bloco11 {
+  top: 80px;
+  left: 33%;
+  background-color: transparent;
+  height: 260px;
+  width: 34%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Bloco11 p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.Rodape {
+  height: 250px;
+}
+
+.aquiamostra {
+  top: 2200px;
+}
+
+.aquiamostraseta {
+  height: 190px;
+  width: 240px;
+  position: absolute;
+  top: 2350px;
+  left: 100px;
+  transform: rotate(3deg);
+  display: flex;
+  z-index: 10;
+}
+
+.aquilink {
+  top: 2700px;
+}
+
+.aquilinkseta {
+  top: 2750px;
+  height: 140px;
+  width: 190px;
+}
+  
+.NoLink h1 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.NoLink h2 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+  
+.caixalink a {
+  font-size: 32px;
+}
+
+.caixalink h5 {
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.showInicio {
+  height: 800px;
+  width: 100%;
+}
+
+.showInicio .blocoBranco2 {
+  right: 0;
+}
+  
+.NovaDiv {
+  height: 300px;
+}
+  
+}

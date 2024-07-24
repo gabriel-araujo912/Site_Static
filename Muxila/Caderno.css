@@ -1,0 +1,93 @@
+Para fazer uma ligação entre "html" e "css"
+
+<link rel="stylesheet" type="text/css" href="/Gabriel55Ar/CSS/Geflix.css">
+
+
+Para deixar um rodapé fixo em relação à janela:
+
+position: fixed;
+top:0;
+left: 0;
+
+
+Padrão de cores:
+
+rgba (0,0,0,0.5);
+
+
+Para colocar formas usando o border-radius:
+
+html = 
+<span class="gotas"></span>
+
+css =
+.gotas {
+  position: relative;
+  background: transparent;
+  left: 50px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 30% 70% 25% 75% / 52% 30% 70% 48%;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+              15px 25px 10px rgba(0, 0, 0, 0.1),
+              15px 20px 20px rgba(0, 0, 0, 0.05),
+              inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+}
+
+.gotas::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+
+Animação de um coração batendo
+
+html =
+<span class="gotas"></span>
+
+css =
+.gotas {
+  position: relative;
+  background: red;
+  left: 50%;
+  top: 20%;
+  width: 500px;
+  height: 500px;
+  display: block;
+  border-radius: 71% 29% 61% 39% / 50% 40% 60% 50%;
+  transition: 0.5s;
+  animation: animacao 0.8s infinite;
+}
+
+@keyframes animacao
+{
+  0%
+  {
+    width: 500px;
+    height: 500px;
+  }
+  50%
+  {
+    width: 520px;
+    height: 520px;
+  }
+  100%
+  {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+
+Efeito de blur:
+
+backdrop-filter: blur(10px);
+
+
